@@ -1,19 +1,19 @@
 const Sequelize = require('sequelize');
 const database  = require('../util/database');
 
-module.exports = database.define('slot', {
+module.exports = database.define('meeting', {
     id : {
         type : Sequelize.INTEGER,
         allowNull : false,
         autoIncrement: true,
         primaryKey : true,
     },
-    time : {
-        type: Sequelize.STRING,
+    name :{
+        type : Sequelize.STRING,
         allowNull : false,
     },
-    count : {
-        type : Sequelize.INTEGER,
+    email : {
+        type : Sequelize.STRING,
         allowNull : false,
     }
 });
