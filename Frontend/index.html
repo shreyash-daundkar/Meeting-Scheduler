@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meeting Scheduler</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="slots">
+        <div class="slot" data-time="09:00 AM">
+            09:00 AM
+            <span class="available-slots">4 available</span>
+          </div>
+          <div class="slot" data-time="09:00 AM">
+            01:00 AM
+            <span class="available-slots">4 available</span>
+          </div>
+          <div class="slot" data-time="09:00 AM">
+            03:00 AM
+            <span class="available-slots">4 available</span>
+          </div>
+          <div class="slot" data-time="09:00 AM">
+            05:00 AM
+            <span class="available-slots">4 available</span>
+          </div>
+    </div>
+
+    <div class="schedule-list"></div>
+
+    <div class="modal" id="scheduleModal">
+        <h2>Schedule Meeting</h2>
+        <form id="scheduleForm">
+            <input type="text" id="name" placeholder="Name" required>
+            <input type="email" id="email" placeholder="Email" required>
+            <button type="submit">Schedule</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
